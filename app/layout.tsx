@@ -26,9 +26,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
           
+          <main className="flex-grow">
             {children}
+          </main>
           
           <Chatbot />
+          
           <footer className="bg-muted text-muted-foreground mt-8">
             <div className="container mx-auto px-4 py-6 flex justify-between items-center">
               <p>&copy; 2024 CloudDogg. All rights reserved.</p>
