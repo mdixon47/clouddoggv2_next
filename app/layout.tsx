@@ -26,9 +26,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
           
-          <main className="flex-grow">
+          
             {children}
-          </main>
+         
           
           <Chatbot />
           
