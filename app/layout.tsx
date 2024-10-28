@@ -6,6 +6,9 @@ import './globals.css'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Add any head elements here */}
+      </head>
       <body>
         <div className="flex flex-col min-h-screen">
           <header className="bg-primary text-primary-foreground shadow-md">
@@ -25,10 +28,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </nav>
             </div>
           </header>
-          
-          
-            {children}
-         
+          <main>
+                 {children}
+          </main>
+       
           
           <Chatbot />
           
@@ -37,7 +40,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p>&copy; 2024 CloudDogg. All rights reserved.</p>
               <div className="flex space-x-4">
                 <Link href="#" className="hover:underline">Privacy Policy</Link>
-                <Link href="#" className="hover:underline">Terms of Service</Link>
               </div>
             </div>
           </footer>
