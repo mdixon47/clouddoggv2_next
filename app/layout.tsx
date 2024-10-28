@@ -7,7 +7,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Add any head elements here */}
+        <title>CloudDogg - Your Cloud Solutions Partner</title>
+        <meta name="description" content="CloudDogg provides top-notch cloud solutions for businesses of all sizes. Contact us to learn more about our services." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Add any additional head elements here */}
       </head>
       <body>
         <div className="flex flex-col min-h-screen">
@@ -28,10 +32,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </nav>
             </div>
           </header>
-          <main>
-                 {children}
-          </main>
-       
+           
+          {children}
           
           <Chatbot />
           
