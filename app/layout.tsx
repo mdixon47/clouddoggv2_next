@@ -33,9 +33,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </header>
            
-          <main>
+          
               {children}
-          </main>
+         
         
           
           <Chatbot />
